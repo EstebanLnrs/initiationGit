@@ -1,0 +1,482 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-size:20px;
+}
+
+body{
+  margin-top: 3rem;
+  background-color: #F7F8FD;
+  font-family: "Jost", sans-serif;
+}
+
+.text{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #647196;
+}
+
+.title{
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.2rem;
+  color: #3a4374;
+}
+
+.littlebutton{
+  font-size: 0.813rem;
+  font-weight: 600;
+}
+
+/***
+
+Page Index
+
+***/
+
+.main-page{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sidebar a{
+  display: flex;
+  border-radius:8px;
+  background: #f2f4ff;
+  font-size:15px;
+  padding:5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor:pointer;
+  margin:5px;  
+  font-weight: 600;  
+  color: #4661e6;
+  font-size: 0.813rem;
+}
+
+.side{
+  
+  display:flex;
+  flex-direction: column;
+  left:20vh;
+  width: 250px;
+  height: 100%;
+  top: 10vh;
+  
+}
+
+.board{
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  height: auto;
+  background-image: url("assets/gradient.png");
+  background-size: cover;
+  color: white;
+  font-size: 1.125rem;
+}
+
+.gradient{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar{
+  display: flex;
+  border-radius: 10px;
+  background: white;
+  padding: 20px;
+  height: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.roadmap{
+  display: flex;
+  border-radius: 10px;
+  background: white;
+  padding: 1.5rem;
+  height: auto;
+  padding-bottom: 30px;
+  flex-direction: column;
+}
+
+.roadmap-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+.roadmap-top h1{
+  font-family: "Jost Bold";
+}
+
+.roadmap-top a{
+  color: blue;
+  text-decoration: underline;
+  font-size: 0.813rem;
+}
+
+.roadmap-content ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.roadmap-content li{
+  margin-left: 1.1rem;
+}
+
+.home-header{
+  display:flex;
+  flex-direction: column;
+  left:50vh;
+  height: 100%;
+  top: 10vh;
+  width: 85%;
+}
+
+.content-top{
+  display: flex;
+  border-radius: 10px;
+  background: #373f68;
+  padding: 1rem;
+  margin-left: 2rem;
+  height: 45px;
+  color: white;
+  align-items: baseline;
+  width: 50rem;
+}
+
+.suggestions{
+  display: flex;
+  align-items: baseline;
+}
+
+.suggest-icon{
+  height: 36px;
+  position: absolute;
+}
+
+.AddButton{
+  left:33%;
+  padding:10px;
+  border-radius:7px;
+  cursor:pointer;
+  background: #ad1fea;
+  cursor:pointer;
+  font-weight: 600;  
+  color: white;
+  font-size: 0.813rem;
+  border: none;
+  font-family: 'Jost';
+}
+
+.content-mid{
+  display: flex;
+  border-radius: 10px;
+  background: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.upvotes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f4ff;
+  padding: 0.3rem;
+  border-radius: 8px;
+  height: 2.5rem;
+  width: 2rem;
+}
+
+.topic{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 3rem;
+  width: 40rem;
+}
+
+.topic p{
+  line-height: 1.9rem;
+}
+
+.comments{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px ) {
+  
+  .body{
+    margin-left: 1rem;
+    margin-top: 3rem;
+  }
+  
+  .main-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side{
+    display: flex;
+    flex-direction: row;
+    width: 40rem;
+    height: 10rem;
+    justify-content: space-evenly;
+    margin-left: 1.7rem;
+  }
+
+  .board{
+    width: 10rem;
+    line-height: 2.5rem;
+  }
+
+  .sidebar{
+    width: 10rem;
+  }
+
+  .roadmap{
+    width: 10rem;
+  }
+
+  .content-top{
+    margin-top: 3rem;
+    width: 37.3rem;
+    height: 50px;
+  }
+
+  .AddButton{
+    left: 7%;
+    padding: 0.8rem;
+    width: 8rem;
+    border-radius: 10px;
+  }
+
+  .content-mid{
+    width: 37.3rem;
+  }
+}
+
+/***
+
+Page Feedback
+
+***/
+
+.feedback{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-content-feedback{
+  display: flex;
+}
+
+.head{
+  display: flex;
+  align-items: center;
+}
+
+.EditButton{
+  left:37%;
+  padding:0.8rem;
+  border-radius:14px;
+  cursor:pointer;
+  background: #4661e6;
+  cursor:pointer;
+  font-weight: 600;  
+  color: white;
+  font-size: 0.813rem;
+  border: none;
+  font-family: 'Jost';
+  width: 10rem;
+}
+
+.content-mid-feedback{
+  display: flex;
+  border-radius: 10px;
+  background: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.comments-view{
+  border-radius: 10px;
+  background: white;
+  padding: 1rem;
+  width: 48.5rem;
+}
+
+.informations{
+  display: flex;
+}
+
+.title-comments{
+  display: flex;
+}
+
+.replies{
+  display: flex;
+}
+
+.avatar{
+  display: flex;
+  justify-content: center;
+  height: 10rem;
+  width: 5rem;
+}
+
+.avatar img{
+  border-radius: 30rem;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.user-info{
+  display: flex;
+  flex-direction: column;
+  width: 38.5rem;
+  margin-left: 1rem;
+}
+
+.reply{
+  display: flex;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+.textarea{
+  display: flex;
+}
+
+.textarea p{
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+
+.comment-reply{
+  display: flex;
+  margin-left: 6rem;
+  border: solid 1px #4661e6;
+  border-radius: 6px;
+  background-color: #F7F8FD;
+  height: 5rem;
+  width: 30rem;
+  cursor: pointer;
+}
+
+.AddButton-feedback{
+  left:37%;
+  padding:0.8rem;
+  border-radius:14px;
+  cursor:pointer;
+  background: #ad1fea;
+  cursor:pointer;
+  font-weight: 600;  
+  color: white;
+  font-size: 0.813rem;
+  border: none;
+  font-family: 'Jost';
+  width: 8rem;
+}
+
+.comments-view-reply{
+  display: flex;
+}
+
+.avatar-column{
+  display: flex;
+  justify-content: center;
+  height: 10rem;
+  width: 5rem;
+}
+
+.avatar-column img{
+  border-radius: 30rem;
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.comments-replies{
+  display: flex;
+  margin-left: 3rem;
+}
+
+.comment-add-reply{
+  display: flex;
+  margin-left: 6rem;
+  border: solid 1px #4661e6;
+  border-radius: 6px;
+  background-color: #F7F8FD;
+  height: 5rem;
+  width: 46.5rem;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.comment-post{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px ) {
+  
+  .body{
+    margin-left: 1rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .head{
+    width: 39rem;
+  }
+
+  .back{
+    width: 7rem;
+  }
+
+  .content-mid-feedback{
+    width: 38.5rem;
+  }
+
+  .textarea{
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+  }
+
+  .textarea p{
+    margin-right: 1rem;
+  }
+
+  .comment-reply{
+    margin-left: 4.5rem;
+  }
+
+  .comments-view{
+    width: 38.5rem;
+  }
+
+  .comment-add-reply{
+    width: 36.5rem;
+  }
+}
